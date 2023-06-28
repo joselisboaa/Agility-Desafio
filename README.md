@@ -4,18 +4,18 @@ Repositorio para o Desafio de front end da Agility
 ## Principais Bibliotecas/Ferramentas
 | Environment | Info |
 |---|---|
-| Node | v.18.5.0 (LTS) |
-| React | >= v.18.0.0 |
-| Next.js | >= 13.0 |
+| Node | v.20.3.2 |
+| React | >= v.18.2.14 |
+| Next.js | >= 13.4.7 |
 | React Hook Form | >= v.7.0.0 |
 | Zod | >= v.3.21.4 |
-| TypeScript | v.5.0.2 |
-| Tailwindcss | v.3.3.0 |
+| TypeScript | v.5.1.5 |
+| Tailwindcss | v.3.3.2 |
 | React notifications component | >= v.3.3.3 |
 | Recharts | >= v.2.4.3 |
 | React Query | v.4.29.1 |
-| classNames | 2.3.2 |
-| tailwind-merge | 1.13.2 |
+| classNames | v.2.3.2 |
+| tailwind-merge | v.1.13.2 |
 
 **Documentação**
 
