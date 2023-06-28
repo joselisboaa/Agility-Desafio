@@ -51,7 +51,7 @@ http://localhost:3000/
 
 ### Padrão de id
 
-O id deve ser _AG_ junto com a id da issue com 3 casas de unidades, exemplo: GF001
+O id deve ser _AG_ junto com a id da issue com 3 casas de unidades, exemplo: AF001
 
 ### Padrão de issue
 * feature/{id} - {Titulo}
