@@ -20,7 +20,7 @@ export const Button: React.FC<IButtonProps> = ({ color, children, styles, ...pro
     primary: "bg-primary hover:bg-primary-light",
   };
 
-  const standardSize = "rounded-[5px] lg:w-[24.25rem] lg:h-[3.5rem]"
+  const standardSize = "rounded-[5px] h-[3.5rem] lg:w-[24.25rem] lg:h-[3.5rem]"
 
   return (
     <button className={twMerge(classNames(colorVariants["primary"], "rounded-[5px]", standardSize), styles)}>
