@@ -1,0 +1,1 @@
+export { default as errorPageIcon } from "@/assets/img/error-page.svg";
