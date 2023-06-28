@@ -14,6 +14,8 @@ Repositorio para o Desafio de front end da Agility
 | React notifications component | >= v.3.3.3 |
 | Recharts | >= v.2.4.3 |
 | React Query | v.4.29.1 |
+| classNames | 2.3.2 |
+| tailwind-merge | 1.13.2 |
 
 **Documentação**
 
