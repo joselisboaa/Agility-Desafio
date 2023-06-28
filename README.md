@@ -1,7 +1,7 @@
 # Agility Desafio
 Repositorio para o Desafio de front end da Agility
 
-## Principais Bibliotecas 
+## Principais Bibliotecas/Ferramentas
 | Environment | Info |
 |---|---|
 | Node | v.18.5.0 (LTS) |
