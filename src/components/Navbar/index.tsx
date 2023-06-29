@@ -17,58 +17,6 @@ export const Navbar = () => {
           <Image src={blueMapIcon} alt="ir para Lojas parceiras" className="fill-primary" />
           <span className="text-sm">Lojas parceiras</span>
         </div>
-        <div className=" flex min-h-[3.75rem] cursor-pointer items-center gap-4 pl-4 hover:bg-gray-color-40">
-          <Image src={blueMapIcon} alt="ir para Lojas parceiras" className="fill-primary" />
-          <span className="text-sm">Lojas parceiras</span>
-        </div>
-        <div className=" flex min-h-[3.75rem] cursor-pointer items-center gap-4 pl-4 hover:bg-gray-color-40">
-          <Image src={blueMapIcon} alt="ir para Lojas parceiras" className="fill-primary" />
-          <span className="text-sm">Lojas parceiras</span>
-        </div>
-        <div className=" flex min-h-[3.75rem] cursor-pointer items-center gap-4 pl-4 hover:bg-gray-color-40">
-          <Image src={blueMapIcon} alt="ir para Lojas parceiras" className="fill-primary" />
-          <span className="text-sm">Lojas parceiras</span>
-        </div>
-        <div className=" flex min-h-[3.75rem] cursor-pointer items-center gap-4 pl-4 hover:bg-gray-color-40">
-          <Image src={blueMapIcon} alt="ir para Lojas parceiras" className="fill-primary" />
-          <span className="text-sm">Lojas parceiras</span>
-        </div>
-        <div className=" flex min-h-[3.75rem] cursor-pointer items-center gap-4 pl-4 hover:bg-gray-color-40">
-          <Image src={blueMapIcon} alt="ir para Lojas parceiras" className="fill-primary" />
-          <span className="text-sm">Lojas parceiras</span>
-        </div>
-        <div className=" flex min-h-[3.75rem] cursor-pointer items-center gap-4 pl-4 hover:bg-gray-color-40">
-          <Image src={blueMapIcon} alt="ir para Lojas parceiras" className="fill-primary" />
-          <span className="text-sm">Lojas parceiras</span>
-        </div>
-        <div className=" flex min-h-[3.75rem] cursor-pointer items-center gap-4 pl-4 hover:bg-gray-color-40">
-          <Image src={blueMapIcon} alt="ir para Lojas parceiras" className="fill-primary" />
-          <span className="text-sm">Lojas parceiras</span>
-        </div>
-        <div className=" flex min-h-[3.75rem] cursor-pointer items-center gap-4 pl-4 hover:bg-gray-color-40">
-          <Image src={blueMapIcon} alt="ir para Lojas parceiras" className="fill-primary" />
-          <span className="text-sm">Lojas parceiras</span>
-        </div>
-        <div className=" flex min-h-[3.75rem] cursor-pointer items-center gap-4 pl-4 hover:bg-gray-color-40">
-          <Image src={blueMapIcon} alt="ir para Lojas parceiras" className="fill-primary" />
-          <span className="text-sm">Lojas parceiras</span>
-        </div>
-        <div className=" flex min-h-[3.75rem] cursor-pointer items-center gap-4 pl-4 hover:bg-gray-color-40">
-          <Image src={blueMapIcon} alt="ir para Lojas parceiras" className="fill-primary" />
-          <span className="text-sm">Lojas parceiras</span>
-        </div>
-        <div className=" flex min-h-[3.75rem] cursor-pointer items-center gap-4 pl-4 hover:bg-gray-color-40">
-          <Image src={blueMapIcon} alt="ir para Lojas parceiras" className="fill-primary" />
-          <span className="text-sm">Lojas parceiras</span>
-        </div>
-        <div className=" flex min-h-[3.75rem] cursor-pointer items-center gap-4 pl-4 hover:bg-gray-color-40">
-          <Image src={blueMapIcon} alt="ir para Lojas parceiras" className="fill-primary" />
-          <span className="text-sm">Lojas parceiras</span>
-        </div>
-        <div className=" flex min-h-[3.75rem] cursor-pointer items-center gap-4 pl-4 hover:bg-gray-color-40">
-          <Image src={blueMapIcon} alt="ir para Lojas parceiras" className="fill-primary" />
-          <span className="text-sm">Lojas parceiras</span>
-        </div>
       </div>
     </nav>
   );
