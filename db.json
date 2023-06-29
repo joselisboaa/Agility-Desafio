@@ -1,0 +1,78 @@
+{
+  "accounts": [
+    {
+      "id": 1, "login": "admin", "password": "admin"  
+    }
+  ],
+  "clients": [
+    {
+      "id": 1, "name": "Zé da Silva"
+    },
+    {
+      "id": 2, "name": "Zé Lisboa"
+    },
+    {
+      "id": 3, "name": "Bruno Costa"
+    },
+    {
+      "id": 4, "name": "Mineu Soares"
+    },
+    {
+      "id": 5, "name": "Ricardo Pontes"
+    },
+    {
+      "id": 6, "name": "Nicolau Madeiro"
+    }
+  ],
+  "cities": [
+    {
+      "id": 1, "name": "Pereiro", "ammount": "120.334"
+    },
+    {
+      "id": 2, "name": "Maracanaú", "ammount": "114.423"
+    },
+    {
+      "id": 3, "name": "Maranguape", "ammount": "112.781"
+    },
+    {
+      "id": 4, "name": "Forquilha", "ammount": "109.988"
+    },
+    {
+      "id": 5, "name": "Sobral", "ammount": "107.326"
+    },
+    {
+      "id": 6, "name": "Iguatu", "ammount": "102.454"
+    },
+    {
+      "id": 7, "name": "Fortaleza", "ammount": "90.760"
+    }, 
+    {
+      "id": 8, "name": "Cedro", "ammount": "90.750"
+    } 
+  ],
+  "signatures": [
+    {
+      "id": 1, "client_id": 3, "city_id": 1
+    },
+    {
+      "id": 2, "client_id": 2, "city_id": 1
+    },
+    {
+      "id": 3, "client_id": 6, "city_id": 7
+    },
+    {
+      "id": 4, "client_id": 1, "city_id": 2
+    }
+  ],
+  "stores": [
+    {
+      "id": 1, "city_id": 1, "name": "Loja do Seu Zé"
+    },
+    {
+      "id": 2, "city_id": 7, "name": "Loja do Seu Carlos"
+    },
+    {
+      "id": 3, "city_id": 7, "name": "Boteco Maria bonita"
+    }
+  ]
+}
