@@ -1,6 +1,7 @@
 // SVG icons
 export { default as errorPageIcon } from "@/assets/img/error-page.svg";
 export { default as eyeShow } from "@/assets/img/eye.svg";
+export { default as menuRight } from "@/assets/img/Menu-right.svg";
 
 // PNG assets
 export { default as manWalkingByTrucks } from "@/assets/img/full-shot-man-walking-by-trucks-fleet 1.png";
