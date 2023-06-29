@@ -31,7 +31,7 @@ export const TextField: React.FC<ITextFieldProps> = ({ type, name, register, lab
   return (
     <div className="flex flex-col gap-2">
       <label className="font-medium text-primary-dark">{labelText}</label>
-      <div className={twMerge("flex border-[1px] rounded-[4px] border-input-border py-[1rem] px-[1rem] sm:w-[24.25rem] sm:h-[3.5rem]", styles)}>
+      <div className={twMerge("flex border-[1px] rounded-[4px] border-input-border py-[1rem] px-[1rem] sm:w-[24.25rem] sm:max-w-[24.25rem]", styles)}>
         <input {...register(name)} onChange={handleOnChange} placeholder={placeholder} type={inputType} value={inputValue} className="outline-none w-full">
         </input>
         {
