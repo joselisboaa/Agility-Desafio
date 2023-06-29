@@ -14,7 +14,7 @@ interface IButtonColors {
   primary: string;
 }
 
-export const Button: React.FC<IButtonProps> = ({ color, children, styles, ...props }) => {
+export const Button: React.FC<IButtonProps> = ({ color, children, type = "button", styles, ...props }) => {
   const colorVariants: IButtonColors = {
     primary: "bg-primary hover:bg-primary-light",
   };
@@ -22,7 +22,7 @@ export const Button: React.FC<IButtonProps> = ({ color, children, styles, ...pro
   const standardSize = "rounded-[5px] h-[3.5rem] lg:w-[24.25rem] lg:h-[3.5rem]";
 
   return (
-    <button className={twMerge(classNames(colorVariants["primary"], "rounded-[5px]", standardSize), styles)}>
+    <button type={type} className={twMerge(classNames(colorVariants["primary"], "rounded-[5px]", standardSize), styles)}>
       <span className="left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 text-white">{children}</span>
     </button>
   );
