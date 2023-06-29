@@ -36,7 +36,7 @@ export const TextField: React.FC<ITextFieldProps> = ({ type, name, register, lab
         </input>
         {
           type === "password" && icon ?
-          <div className="px-[1rem]" onClick={letShowOrHidePassword}>
+          <div className="flex justify-center items-center pl-[1rem]" onClick={letShowOrHidePassword}>
             <Image src={icon} alt="show password"/>
           </div>
           : null
