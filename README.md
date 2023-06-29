@@ -34,7 +34,9 @@ Repositorio para o Desafio de front end da Agility
 Com todos os pré-requisitos instalados. Após clonar o projeto execute o comando:
 
 > npm install
+
 ou
+
 > npm install --legacy-peer-deps
 
 Depois de iniciar a pasta node_modules, execute o comando:
