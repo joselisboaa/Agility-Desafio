@@ -49,6 +49,20 @@ Url para acessar o servidor:
 http://localhost:3000/
 ```
 
+## Configuração do Json-Server
+
+Após a instalação de todos os pacotes, execute o comando:
+
+> npm run server
+
+desse modo o mock do backend poderá funcionar corretamente.
+
+**OBS: Apenas irá ter 1 usuário cadastrado.**
+```
+Login: admin
+Senha: admin
+```
+
 ## Padrões 
 
 ### Padrão de id
