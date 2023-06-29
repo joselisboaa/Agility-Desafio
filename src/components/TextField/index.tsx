@@ -1,11 +1,11 @@
-"use client"
+"use client";
 import { ChangeEvent, InputHTMLAttributes, useState } from "react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { UseFormRegister } from "react-hook-form";
 import { ILoginProps } from "@/features/Login/components/page";
 
-interface ITextFieldProps extends InputHTMLAttributes<HTMLInputElement>{
+interface ITextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   type: string;
   labelText: string;
   placeholder?: string;
@@ -22,26 +22,30 @@ export const TextField: React.FC<ITextFieldProps> = ({ type, name, register, lab
   const handleOnChange = (event: ChangeEvent<HTMLInputElement>) => {
     const value = (event?.target as HTMLInputElement).value;
     setInputValue(value);
-  }
+  };
 
   const letShowOrHidePassword = () => {
-    setInputType((prevType) => prevType === "text" ? "password" : "text")
-  }
+    setInputType((prevType) => (prevType === "text" ? "password" : "text"));
+  };
 
   return (
     <div className="flex flex-col gap-2">
       <label className="font-medium text-primary-dark">{labelText}</label>
-      <div className={twMerge("flex border-[1px] rounded-[4px] border-input-border py-[1rem] px-[1rem] sm:w-[24.25rem] sm:max-w-[24.25rem]", styles)}>
-        <input {...register(name)} onChange={handleOnChange} placeholder={placeholder} type={inputType} value={inputValue} className="outline-none w-full">
-        </input>
-        {
-          type === "password" && icon ?
-          <div className="flex justify-center items-center pl-[1rem]" onClick={letShowOrHidePassword}>
-            <Image src={icon} alt="show password"/>
+      <div className={twMerge("flex rounded-[4px] border-[1px] border-input-border px-[1rem] py-[1rem] sm:w-[24.25rem] sm:max-w-[24.25rem]", styles)}>
+        <input
+          {...register(name)}
+          onChange={handleOnChange}
+          placeholder={placeholder}
+          type={inputType}
+          value={inputValue}
+          className="w-full outline-none"
+        ></input>
+        {type === "password" && icon ? (
+          <div className="flex items-center justify-center pl-[1rem]" onClick={letShowOrHidePassword}>
+            <Image src={icon} alt="show password" />
           </div>
-          : null
-        }
+        ) : null}
       </div>
     </div>
   );
-}
+};

@@ -15,12 +15,10 @@ export default function NotFound() {
             <Image src={errorPageIcon} alt="página de erro" className="h-16 w-16 sm:hidden" />
           </div>
           <h2 className="text-center text-2xl text-error sm:text-left">Página não encontrada</h2>
-          <p className="text-center sm:text-left text-error">A página que você está tentando acessar não existe.</p>
+          <p className="text-center text-error sm:text-left">A página que você está tentando acessar não existe.</p>
         </div>
         <a href="/">
-          <Button id="home">
-            Voltar ao início
-          </Button>
+          <Button id="home">Voltar ao início</Button>
         </a>
       </div>
     </div>
