@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Logo } from "../Logo";
-import { menuRight, notification } from "@/assets";
+import { arrowDown, menuRight, notification } from "@/assets";
 import { Button } from "../Button";
 
 interface IHeaderProps {
@@ -14,7 +14,7 @@ export const Header: React.FC<IHeaderProps> = ({ username }) => {
         <Logo />
       </div>
       <div className="flex w-full flex-row justify-between pr-10">
-        <div className="flex items-center ">
+        <div className="flex items-center">
           <Image src={menuRight} alt="hotdog para abrir o menu" />
         </div>
         <div className="flex items-center justify-center gap-4">
@@ -26,6 +26,7 @@ export const Header: React.FC<IHeaderProps> = ({ username }) => {
               {username.slice(0, 2)}
             </Button>
             <span className="capitalize">{username}</span>
+            <Image src={arrowDown} alt="informações do usuário" />
           </div>
         </div>
       </div>
