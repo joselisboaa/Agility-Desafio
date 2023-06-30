@@ -11,7 +11,7 @@ export const Ranking = async () => {
   const sortedCitiesAmmount = cityResponse.sort();
 
   return (
-    <aside className="flex w-[25rem] flex-col gap-8 bg-primary-background p-10 font-semibold text-secondary-dark">
+    <aside className="flex w-[18.75rem] flex-col gap-8 bg-primary-background p-6 font-semibold text-secondary-dark 2xl:p-8">
       <h3 className="text-2xl">Ranking das cidades</h3>
       <div className="flex justify-between px-4 py-5">
         <span>Cidade</span>
