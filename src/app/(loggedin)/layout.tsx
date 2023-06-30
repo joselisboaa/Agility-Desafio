@@ -1,8 +1,6 @@
 import { Header, Navbar } from "@/components";
 import { useFetch } from "@/hooks/useFetch";
 
-const GOOGLE_API_KEY = process.env.NEXT_PUBLIC_ACL_GOOGLE_API_KEY;
-
 interface IHomeLayout {
   children: React.ReactNode;
 }
@@ -23,7 +21,7 @@ export default async function HomeLayout({ children }: IHomeLayout) {
       <Header username={userData.login} />
       <div className="flex">
         <Navbar />
-        <div className="h-screen w-full bg-primary-brand-dark">{children}</div>
+        <div className="h-screen w-full bg-primary-brand-dark p-5">{children}</div>
       </div>
     </div>
   );

@@ -11,9 +11,13 @@ export { default as profile } from "@/assets/img/profile-2user.svg";
 export { default as cpuIcon } from "@/assets/img/cpu.svg";
 export { default as buildingIcon } from "@/assets/img/building.svg";
 export { default as arrowLeft } from "@/assets/img/arrow-left.svg";
+export { default as mapPin } from "@/assets/img/Pin.svg";
+export { default as addIcon } from "@/assets/img/add.svg";
+export { default as arrowOut } from "@/assets/img/arrow-out-left.svg";
 
 // PNG assets
 export { default as manWalkingByTrucks } from "@/assets/img/full-shot-man-walking-by-trucks-fleet 1.png";
 export { default as aerialFactoryView } from "@/assets/img/aerial-view-factory-trucks-parked-near-warehouse-daytime 1.png";
 export { default as truckVehicle } from "@/assets/img/truck-vehicle-with-trailers-background 1.png";
 export { default as mapIcon } from "@/assets/img/map.png";
+export { default as mapEllipse } from "@/assets/img/elipse.png";
