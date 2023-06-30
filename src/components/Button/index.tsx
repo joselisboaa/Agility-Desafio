@@ -5,6 +5,7 @@ import classNames from "classnames";
 
 interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   id: string;
+  textColor?: string;
   styles?: string;
   color?: string;
   variant?: string;
@@ -14,7 +15,7 @@ interface IButtonColors {
   primary: string;
 }
 
-export const Button: React.FC<IButtonProps> = ({ color, children, type = "button", styles, ...props }) => {
+export const Button: React.FC<IButtonProps> = ({ textColor, color, children, type = "button", styles, ...props }) => {
   const colorVariants: IButtonColors = {
     primary: "bg-primary hover:bg-primary-light",
   };
@@ -23,7 +24,7 @@ export const Button: React.FC<IButtonProps> = ({ color, children, type = "button
 
   return (
     <button type={type} className={twMerge(classNames(colorVariants["primary"], "rounded-[5px]", standardSize), styles)}>
-      <span className="left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 text-white">{children}</span>
+      <span className={twMerge(classNames("left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 text-white", textColor))}>{children}</span>
     </button>
   );
 };
