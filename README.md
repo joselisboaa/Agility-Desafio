@@ -11,14 +11,14 @@ Repositorio para o Desafio de front end da Agility
 | Zod | v.3.21.4 |
 | TypeScript | v.5.1.5 |
 | Tailwindcss | v.3.3.2 |
-| Recharts | >= v.2.4.3 |
+| Recharts | v.2.7.2 |
 | React Query | v.4.29.1 |
 | classNames | v.2.3.2 |
 | tailwind-merge | v.1.13.2 |
 | tailwind-scrollbar | v.3.0.4 |
 | json-server | v.0.17.3 |
 | react-toastify | v.9.1.2 |
-| @react-google-maps/api | 2.18.1 |
+| @react-google-maps/api | v.2.18.1 |
 
 **Documentação**
 
