@@ -12,7 +12,7 @@ interface ICard {
 export const Card: React.FC<ICard> = ({ icon, title, status, countStatus, statusNumber, statusIcon }) => {
   return (
     <div className="h-fit w-full max-w-[18.75rem] bg-white p-4 lg:p-5 xl:p-6 2xl:p-8">
-      <div className="flex items-center justify-between gap-2 lg:gap-2 xl:gap-8">
+      <div className="flex items-center justify-between">
         <div className="flex flex-col">
           <Image src={icon} alt="ícone da funcionalidade" />
           <h4 className="text-lg">{title}</h4>
