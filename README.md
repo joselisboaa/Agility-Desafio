@@ -77,6 +77,9 @@ Login: admin
 Senha: admin
 ```
 
+## Deploy
+Como não foi possível mockar o banco de dados no deploy, será necessário rodar o sistema na sua máquina local para os dados serem capturados
+
 ## Padrões 
 
 ### Padrão de id
