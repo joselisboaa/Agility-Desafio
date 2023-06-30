@@ -74,5 +74,37 @@
     {
       "id": 3, "city_id": 7, "name": "Boteco Maria bonita"
     }
+  ],
+  "customer-entry": [
+    {
+      "id": 1, "month": "Julho", "day": 1,"customer_quantity": 18
+    },
+    {
+      "id": 2, "month": "Julho", "day": 2,"customer_quantity": 24
+    },
+    {
+      "id": 3, "month": "Julho", "day": 3,"customer_quantity": 40
+    },
+    {
+      "id": 4, "month": "Julho", "day": 4,"customer_quantity": 52
+    },
+    {
+      "id": 5, "month": "Julho", "day": 5,"customer_quantity": 55
+    },
+    {
+      "id": 6, "month": "Julho", "day": 6,"customer_quantity": 58
+    },
+    {
+      "id": 7, "month": "Julho", "day": 7,"customer_quantity": 88
+    },
+    {
+      "id": 8, "month": "Julho", "day": 8,"customer_quantity": 102
+    },
+    {
+      "id": 9, "month": "Julho", "day": 9,"customer_quantity": 122
+    },
+    {
+      "id": 10, "month": "Julho", "day": 10,"customer_quantity": 155
+    }
   ]
 }
