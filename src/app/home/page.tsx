@@ -1,5 +1,10 @@
+import { HomeComponent } from "@/features/Home/page";
 
 
 export default function HomePage() {
-  return <></>
+  return (
+  <div>
+    <HomeComponent />
+  </div>
+  )
 }
