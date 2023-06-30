@@ -13,8 +13,7 @@ export function useFetch<T>({
     const response = await fetch(`http://127.0.0.1:8000/${endpoint}`, {
       headers: { "Content-Type": "application/json" },
       body: body ? JSON.stringify(body) : null,
-      method: method,
-      cache: "no-cache",
+      method: method
     });
 
     const text = await response.text();
