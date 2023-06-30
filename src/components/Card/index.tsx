@@ -1,28 +1,31 @@
+import Image from "next/image";
+
 interface ICard {
-  children: React.ReactNode;
-  icon: React.ReactNode;
+  icon: string;
   title: string;
   status: string;
   countStatus: string;
   statusNumber: string;
-  statusIcon: React.ReactNode;
+  statusIcon: string;
 }
 
 export const Card: React.FC<ICard> = ({ icon, title, status, countStatus, statusNumber, statusIcon }) => {
   return (
-    <div className="h-fit w-[9.5rem] bg-white p-8">
-      <div>
-        <div>
-          <div>{icon}</div>
-          <h4>{title}</h4>
-          <p>
+    <div className="h-fit w-full max-w-[18.75rem] bg-white p-4 lg:p-5 xl:p-6 2xl:p-8">
+      <div className="flex items-center justify-between gap-2 lg:gap-2 xl:gap-8 2xl:gap-[45px]">
+        <div className="flex flex-col">
+          <Image src={icon} alt="ícone da funcionalidade" />
+          <h4 className="text-lg">{title}</h4>
+          <p className="text-sm text-tertiary-dark">
             {status}
-            <span>{statusNumber}</span>
-            <span>{statusIcon}</span>
+            <span className="text-brand-green">
+              {statusNumber}
+              <Image className="inline" src={statusIcon} alt="ícone do status" />
+            </span>
           </p>
         </div>
         <div>
-          <span className="text-[2rem] font-bold">{countStatus}</span>
+          <span className="text-[2rem] font-bold text-secondary-dark">{countStatus}</span>
         </div>
       </div>
     </div>
