@@ -5,9 +5,9 @@ Repositorio para o Desafio de front end da Agility
 | Environment | Info |
 |---|---|
 | Node | v.20.3.2 |
-| React | >= v.18.2.14 |
-| Next.js | >= 13.4.7 |
-| React Hook Form | >= v.7.0.0 |
+| React | v.18.2.14 |
+| Next.js | 13.4.7 |
+| React Hook Form | v.7.45.1 |
 | Zod | >= v.3.21.4 |
 | TypeScript | v.5.1.5 |
 | Tailwindcss | v.3.3.2 |
@@ -16,6 +16,8 @@ Repositorio para o Desafio de front end da Agility
 | React Query | v.4.29.1 |
 | classNames | v.2.3.2 |
 | tailwind-merge | v.1.13.2 |
+| tailwind-scrollbar | v.3.0.4 |
+| json-server | v.0.17.3 |
 
 **Documentação**
 
