@@ -1,110 +1,191 @@
 {
   "accounts": [
     {
-      "id": 1, "login": "admin", "password": "admin"  
+      "id": 1,
+      "login": "admin",
+      "password": "admin"
     }
   ],
   "clients": [
     {
-      "id": 1, "name": "Zé da Silva"
+      "id": 1,
+      "name": "Zé da Silva"
     },
     {
-      "id": 2, "name": "Zé Lisboa"
+      "id": 2,
+      "name": "Zé Lisboa"
     },
     {
-      "id": 3, "name": "Bruno Costa"
+      "id": 3,
+      "name": "Bruno Costa"
     },
     {
-      "id": 4, "name": "Mineu Soares"
+      "id": 4,
+      "name": "Mineu Soares"
     },
     {
-      "id": 5, "name": "Ricardo Pontes"
+      "id": 5,
+      "name": "Ricardo Pontes"
     },
     {
-      "id": 6, "name": "Nicolau Madeiro"
+      "id": 6,
+      "name": "Nicolau Madeiro"
     }
   ],
   "cities": [
     {
-      "id": 1, "name": "Pereiro", "ammount": 120.334
+      "id": 1,
+      "name": "Pereiro",
+      "ammount": 120.334
     },
     {
-      "id": 2, "name": "Maracanaú", "ammount": 114.423
+      "id": 2,
+      "name": "Maracanaú",
+      "ammount": 114.423
     },
     {
-      "id": 3, "name": "Maranguape", "ammount": 112.781
+      "id": 3,
+      "name": "Maranguape",
+      "ammount": 112.781
     },
     {
-      "id": 4, "name": "Forquilha", "ammount": 109.988
+      "id": 4,
+      "name": "Forquilha",
+      "ammount": 109.988
     },
     {
-      "id": 5, "name": "Sobral", "ammount": 107.326
+      "id": 5,
+      "name": "Sobral",
+      "ammount": 107.326
     },
     {
-      "id": 6, "name": "Iguatu", "ammount": 102.454
+      "id": 6,
+      "name": "Iguatu",
+      "ammount": 102.454
     },
     {
-      "id": 7, "name": "Fortaleza", "ammount": 90.760
-    }, 
+      "id": 7,
+      "name": "Fortaleza",
+      "ammount": 90.76
+    },
     {
-      "id": 8, "name": "Cedro", "ammount": 90.750
-    } 
+      "id": 8,
+      "name": "Cedro",
+      "ammount": 90.75
+    }
   ],
   "signatures": [
     {
-      "id": 1, "client_id": 3, "city_id": 1
+      "id": 1,
+      "client_id": 3,
+      "city_id": 1
     },
     {
-      "id": 2, "client_id": 2, "city_id": 1
+      "id": 2,
+      "client_id": 2,
+      "city_id": 1
     },
     {
-      "id": 3, "client_id": 6, "city_id": 7
+      "id": 3,
+      "client_id": 6,
+      "city_id": 7
     },
     {
-      "id": 4, "client_id": 1, "city_id": 2
+      "id": 4,
+      "client_id": 1,
+      "city_id": 2
     }
   ],
   "stores": [
     {
-      "id": 1, "city_id": 1, "name": "Loja do Seu Zé"
+      "id": 1,
+      "city_id": 1,
+      "latitude": "-3.8016459262844875",
+      "longitude": "-38.564730421914305",
+      "name": "Loja do Seu Zé"
     },
     {
-      "id": 2, "city_id": 7, "name": "Loja do Seu Carlos"
+      "id": 2,
+      "city_id": 7,
+      "latitude": "-4.8016459262844875",
+      "longitude": "-39.564730421914305",
+      "name": "Loja do Seu Carlos"
     },
     {
-      "id": 3, "city_id": 7, "name": "Boteco Maria bonita"
+      "id": 3,
+      "city_id": 7,
+      "latitude": "-5.8016459262844875",
+      "longitude": "-40.564730421914305",
+      "name": "Boteco Maria bonita"
+    },
+    {
+      "name": "teste",
+      "city": "teste",
+      "latitude": "-11",
+      "longitude": "-22",
+      "id": 4
     }
   ],
   "customer-entry": [
     {
-      "id": 1, "month": "Julho", "day": 1,"customer_quantity": 18
+      "id": 1,
+      "month": "Julho",
+      "day": 1,
+      "customer_quantity": 18
     },
     {
-      "id": 2, "month": "Julho", "day": 2,"customer_quantity": 24
+      "id": 2,
+      "month": "Julho",
+      "day": 2,
+      "customer_quantity": 24
     },
     {
-      "id": 3, "month": "Julho", "day": 3,"customer_quantity": 40
+      "id": 3,
+      "month": "Julho",
+      "day": 3,
+      "customer_quantity": 40
     },
     {
-      "id": 4, "month": "Julho", "day": 4,"customer_quantity": 52
+      "id": 4,
+      "month": "Julho",
+      "day": 4,
+      "customer_quantity": 52
     },
     {
-      "id": 5, "month": "Julho", "day": 5,"customer_quantity": 55
+      "id": 5,
+      "month": "Julho",
+      "day": 5,
+      "customer_quantity": 55
     },
     {
-      "id": 6, "month": "Julho", "day": 6,"customer_quantity": 58
+      "id": 6,
+      "month": "Julho",
+      "day": 6,
+      "customer_quantity": 58
     },
     {
-      "id": 7, "month": "Julho", "day": 7,"customer_quantity": 88
+      "id": 7,
+      "month": "Julho",
+      "day": 7,
+      "customer_quantity": 88
     },
     {
-      "id": 8, "month": "Julho", "day": 8,"customer_quantity": 102
+      "id": 8,
+      "month": "Julho",
+      "day": 8,
+      "customer_quantity": 102
     },
     {
-      "id": 9, "month": "Julho", "day": 9,"customer_quantity": 122
+      "id": 9,
+      "month": "Julho",
+      "day": 9,
+      "customer_quantity": 122
     },
     {
-      "id": 10, "month": "Julho", "day": 10,"customer_quantity": 155
+      "id": 10,
+      "month": "Julho",
+      "day": 10,
+      "customer_quantity": 155
     }
   ]
 }
