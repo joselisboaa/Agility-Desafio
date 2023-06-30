@@ -1,5 +1,5 @@
 import { Card } from "@/components/Card";
-import { arrowDown, profile } from "@/assets";
+import { arrowDown, profile, blueMapIcon, buildingIcon, cpuIcon } from "@/assets";
 import { useFetch } from "@/hooks/useFetch";
 
 export const HomeComponent = async () => {
@@ -19,12 +19,12 @@ export const HomeComponent = async () => {
   const storeStatuses = storeResponse.length.toString();
 
   return (
-    <div className="flex items-center justify-center">
-      <section className="flex flex-col items-center w-fit gap-2 flex-wrap lg:ml-4 lg:mt-4 lg:flex-row lg:gap-4 xl:ml-6 xl:mt-6 2xl:ml-10 2xl:mt-10 2xl:gap-6">
+    <div className="flex h-full items-center justify-center">
+      <section className="flex flex-col h-full items-center w-fit gap-2 flex-wrap lg:ml-4 lg:mt-4 lg:flex-row lg:gap-4 xl:ml-6 xl:mt-6 2xl:ml-10 2xl:mt-10 2xl:gap-6">
         <Card countStatus={clientStatuses} icon={profile} status="Crescimento de " statusIcon={arrowDown} statusNumber="100%" title="Total de Clientes" />
-        <Card countStatus={cityStatuses} icon={profile} status="Crescimento de " statusIcon={arrowDown} statusNumber="100%" title="Total de Cidades" />
-        <Card countStatus={signatureStatuses} icon={profile} status="Crescimento de " statusIcon={arrowDown} statusNumber="100%" title="Total de Assinaturas" />
-        <Card countStatus={storeStatuses} icon={profile} status="Crescimento de " statusIcon={arrowDown} statusNumber="100%" title="Total de Lojas parceiras" />
+        <Card countStatus={cityStatuses} icon={blueMapIcon} status="Crescimento de " statusIcon={arrowDown} statusNumber="100%" title="Total de Cidades" />
+        <Card countStatus={signatureStatuses} icon={cpuIcon} status="Crescimento de " statusIcon={arrowDown} statusNumber="100%" title="Total de Assinaturas" />
+        <Card countStatus={storeStatuses} icon={buildingIcon} status="Crescimento de " statusIcon={arrowDown} statusNumber="100%" title="Total de Lojas parceiras" />
       </section>
     </div>
   );
