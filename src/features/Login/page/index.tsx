@@ -7,6 +7,7 @@ import { eyeShow, manWalkingByTrucks } from "@/assets";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useRouter } from "next/navigation";
 import { useFetch } from "@/hooks/useFetch";
+import { notifyError, notifySucess } from "@/utils";
 
 export interface ILoginProps {
   login: string;
@@ -33,11 +34,11 @@ export const LoginPage = () => {
       if (login === users[0].login && password === users[0].password) {
         localStorage.setItem("logged_user_name", users[0].login);
         router.push("home");
-        return alert("logado com sucesso!");
+        return notifySucess("Logado com sucesso!");
       }
-      alert("Suas credenciais estão incorretas");
+      notifyError("Suas credenciais estão incorretas");
     } catch (error) {
-      alert("Erro de conexão");
+      notifyError("Erro de conexão");
     }
   };
 
