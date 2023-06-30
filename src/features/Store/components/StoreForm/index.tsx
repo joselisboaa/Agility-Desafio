@@ -12,6 +12,7 @@ import classNames from "classnames";
 import { twMerge } from "tailwind-merge";
 import { useContext } from "react";
 import { StoreContext } from "../../contexts/Store";
+import { notifyError, notifySucess } from "@/utils";
 
 interface IAddStore {
   name: string;
@@ -27,10 +28,10 @@ export const StoreForm = () => {
   const mutation = useMutation({
     mutationFn: sendHttpRequest<IAddStore>,
     onSuccess: () => {
-      alert("sucesso");
+      notifySucess("Loja criada com sucesso!");
     },
     onError: () => {
-      alert("erro");
+      notifyError("Erro ao criar a loja!");
     },
   });
 
@@ -49,7 +50,7 @@ export const StoreForm = () => {
   } = useForm<IAddStore>({ resolver: zodResolver(schema) });
 
   const onSubmit: SubmitHandler<IAddStore> = (data) => {
-    // mutation.mutate(data);
+    mutation.mutate(data);
   };
 
   const resetAllFields = () => {
