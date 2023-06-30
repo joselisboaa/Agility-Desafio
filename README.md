@@ -8,16 +8,17 @@ Repositorio para o Desafio de front end da Agility
 | React | v.18.2.14 |
 | Next.js | 13.4.7 |
 | React Hook Form | v.7.45.1 |
-| Zod | >= v.3.21.4 |
+| Zod | v.3.21.4 |
 | TypeScript | v.5.1.5 |
 | Tailwindcss | v.3.3.2 |
-| React notifications component | >= v.3.3.3 |
 | Recharts | >= v.2.4.3 |
 | React Query | v.4.29.1 |
 | classNames | v.2.3.2 |
 | tailwind-merge | v.1.13.2 |
 | tailwind-scrollbar | v.3.0.4 |
 | json-server | v.0.17.3 |
+| react-toastify | v.9.1.2 |
+| @react-google-maps/api | 2.18.1 |
 
 **Documentação**
 
@@ -54,6 +55,13 @@ Url para acessar o servidor:
 ```md
 http://localhost:3000/
 ```
+
+## Configuração do Google API
+Nesse projeto é necessário a utilização de uma key do google para a utilização da API de mapa,
+crie um arquivo .env ou .env.local e seguindo o arquivo env-example.txt você verá como irá declarar a sua
+API KEY.
+
+**OBS: CASO NÃO TENHA A API KEY USE: AIzaSyBV7UtHiaqt0-1rYCn09o5BY5BhGiyztRA**
 
 ## Configuração do Json-Server
 
