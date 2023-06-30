@@ -23,7 +23,7 @@ export default async function HomeLayout({ children }: IHomeLayout) {
       <Header username={userData.login} />
       <div className="flex">
         <Navbar />
-        <div className="bg-primary-brand-dark w-full h-screen">{children}</div>
+        <div className="h-screen w-full bg-primary-brand-dark">{children}</div>
       </div>
     </div>
   );
