@@ -15,11 +15,17 @@ export const Navbar = () => {
 
   return (
     <div>
-      {isNavbarClosed ? <Image src={menuRight} className="cursor-pointer absolute left-1" alt="expandir/retrair a barra de menu" onClick={toggleNavbar} /> : null}
-      <nav className={twMerge(classNames("h-screen hidden max-h-[700px] w-[17.5rem] flex-col pl-4", {
-        flex: isNavbarOpen,
-      }))}>
-        <div className="flex items-center justify-between mb-4 px-4">
+      {isNavbarClosed ? (
+        <Image src={menuRight} className="absolute left-1 cursor-pointer" alt="expandir/retrair a barra de menu" onClick={toggleNavbar} />
+      ) : null}
+      <nav
+        className={twMerge(
+          classNames("hidden h-screen max-h-[700px] w-[17.5rem] flex-col pl-4", {
+            flex: isNavbarOpen,
+          }),
+        )}
+      >
+        <div className="mb-4 flex items-center justify-between px-4">
           <h3 className="text-xs uppercase text-secondary-dark">Principal</h3>
           <Image src={menuRight} className="cursor-pointer" alt="hotdog para abrir o menu" onClick={toggleNavbar} />
         </div>
