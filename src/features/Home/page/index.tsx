@@ -1,6 +1,7 @@
 import { Card } from "@/components/Card";
 import { arrowDown, profile, blueMapIcon, buildingIcon, cpuIcon } from "@/assets";
 import { useFetch } from "@/hooks/useFetch";
+import { Ranking } from "../components/Ranking";
 
 export const HomeComponent = async () => {
   const sendCityHttpRequest = useFetch<[]>({ method: "GET", endpoint: "cities" });
@@ -20,12 +21,20 @@ export const HomeComponent = async () => {
 
   return (
     <div className="flex h-full items-center justify-center">
-      <section className="flex flex-col h-full items-center w-fit gap-2 flex-wrap lg:ml-4 lg:mt-4 lg:flex-row lg:gap-4 xl:ml-6 xl:mt-6 2xl:ml-10 2xl:mt-10 2xl:gap-6">
+      <section className="flex h-full w-full flex-col flex-wrap items-center gap-2 lg:ml-4 lg:mt-4 lg:flex-row lg:gap-4 xl:ml-6 xl:mt-6 2xl:ml-10 2xl:mt-10 2xl:gap-6">
         <Card countStatus={clientStatuses} icon={profile} status="Crescimento de " statusIcon={arrowDown} statusNumber="100%" title="Total de Clientes" />
         <Card countStatus={cityStatuses} icon={blueMapIcon} status="Crescimento de " statusIcon={arrowDown} statusNumber="100%" title="Total de Cidades" />
         <Card countStatus={signatureStatuses} icon={cpuIcon} status="Crescimento de " statusIcon={arrowDown} statusNumber="100%" title="Total de Assinaturas" />
-        <Card countStatus={storeStatuses} icon={buildingIcon} status="Crescimento de " statusIcon={arrowDown} statusNumber="100%" title="Total de Lojas parceiras" />
+        <Card
+          countStatus={storeStatuses}
+          icon={buildingIcon}
+          status="Crescimento de "
+          statusIcon={arrowDown}
+          statusNumber="100%"
+          title="Total de Lojas parceiras"
+        />
       </section>
+      <Ranking />
     </div>
   );
 };
