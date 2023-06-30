@@ -3,7 +3,7 @@ import { ChangeEvent, InputHTMLAttributes, useState } from "react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { UseFormRegister } from "react-hook-form";
-import { ILoginProps } from "@/features/Login/components/page";
+import { ILoginProps } from "@/features/Login/page";
 
 interface ITextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   type: string;
