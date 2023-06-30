@@ -13,7 +13,7 @@ export interface IStoreContextProps {
 export const StoreContext = createContext({} as IStoreContextProps);
 
 export const StoreProvider: React.FC<IStoreProvider> = ({ children }) => {
-  const [isActive, setIsActive] = useState<boolean>(true);
+  const [isActive, setIsActive] = useState<boolean>(false);
 
   return (
     <StoreContext.Provider
