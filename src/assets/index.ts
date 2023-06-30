@@ -8,6 +8,8 @@ export { default as homeIcon } from "@/assets/img/home.svg";
 export { default as blueHomeIcon } from "@/assets/img/homeIcon.svg";
 export { default as blueMapIcon } from "@/assets/img/blueMapIcon.svg";
 export { default as profile } from "@/assets/img/profile-2user.svg";
+export { default as cpuIcon } from "@/assets/img/cpu.svg";
+export { default as buildingIcon } from "@/assets/img/building.svg";
 
 // PNG assets
 export { default as manWalkingByTrucks } from "@/assets/img/full-shot-man-walking-by-trucks-fleet 1.png";
