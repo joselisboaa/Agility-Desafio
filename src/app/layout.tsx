@@ -2,6 +2,8 @@ import QueryProvider from "@/components/QueryProvider";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import classNames from "classnames";
+import ToastContainer from "@/components/ToastContainer";
+import "react-toastify/dist/ReactToastify.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           className="h-screen w-screen grow overflow-auto overflow-x-hidden bg-white scrollbar-thin scrollbar-track-slate-300 scrollbar-thumb-primary
         scrollbar-thumb-rounded"
         >
+          <ToastContainer />
           {children}
         </body>
       </QueryProvider>
