@@ -5,7 +5,7 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/features/**/*.{js,ts,jsx,tsx,mdx}"
+    "./src/features/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -14,6 +14,7 @@ module.exports = {
         "primary-light": "#7BB4C6",
         "primary-background": "#FFFFFF",
         "primary-dark": "#333333",
+        "primary-brand-dark": "#F9F9F9",
         "secondary-dark": "#4F4F4F",
         "tertiary-dark": "#828282",
         "input-border": "#BDBDBD",
@@ -22,11 +23,11 @@ module.exports = {
         "brand-yellow": "#F3D11B",
         secondary: "#0F0F0F",
         error: "#E54B4B",
-      }
-    }
+      },
+    },
   },
   plugins: [
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     require("tailwind-scrollbar")({ nocompatible: true }),
-  ]
-}
+  ],
+};
