@@ -20,7 +20,7 @@ export const Navbar = () => {
       ) : null}
       <nav
         className={twMerge(
-          classNames("hidden h-screen max-h-[700px] w-[17.5rem] flex-col pl-4", {
+          classNames("hidden h-screen w-[17.5rem] flex-col pl-4", {
             flex: isNavbarOpen,
           }),
         )}
