@@ -1,7 +1,11 @@
 "use client";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 
-export const Chart = ({ data }) => {
+interface IChartProps {
+  data: any;
+}
+
+export const Chart = ({ data }: IChartProps) => {
   return (
     <ResponsiveContainer width="100%" height={500}>
       <LineChart width={600} height={300} data={data} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
