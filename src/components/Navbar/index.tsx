@@ -2,6 +2,7 @@
 import { blueHomeIcon, blueMapIcon, menuRight } from "@/assets";
 import classNames from "classnames";
 import Image from "next/image";
+import Link from "next/link";
 import { useCallback, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
@@ -33,14 +34,18 @@ export const Navbar = () => {
           className="overflow-y-auto scrollbar-thin scrollbar-track-slate-300 scrollbar-thumb-primary
         scrollbar-thumb-rounded"
         >
-          <div className="flex min-h-[3.75rem] cursor-pointer items-center gap-4 pl-4 hover:bg-gray-color-40">
-            <Image src={blueHomeIcon} alt="ir para a página inicial" className="fill-primary" />
-            <span className="text-sm capitalize">página inicial</span>
-          </div>
-          <div className=" flex min-h-[3.75rem] cursor-pointer items-center gap-4 pl-4 hover:bg-gray-color-40">
-            <Image src={blueMapIcon} alt="ir para Lojas parceiras" className="fill-primary" />
-            <span className="text-sm">Lojas parceiras</span>
-          </div>
+          <Link href="/home">
+            <div className="flex min-h-[3.75rem] cursor-pointer items-center gap-4 pl-4 hover:bg-gray-color-40">
+              <Image src={blueHomeIcon} alt="ir para a página inicial" className="fill-primary" />
+              <span className="text-sm capitalize">página inicial</span>
+            </div>
+          </Link>
+          <Link href="/store-map">
+            <div className=" flex min-h-[3.75rem] cursor-pointer items-center gap-4 pl-4 hover:bg-gray-color-40">
+              <Image src={blueMapIcon} alt="ir para Lojas parceiras" className="fill-primary" />
+              <span className="text-sm">Lojas parceiras</span>
+            </div>
+          </Link>
         </div>
       </nav>
     </div>
