@@ -1,7 +1,7 @@
 "use client";
 import { Button, TextField } from "@/components";
 import Image from "next/image";
-import { useForm } from "react-hook-form";
+import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { arrowOut } from "@/assets";
 import { useMutation } from "@tanstack/react-query";
@@ -48,7 +48,7 @@ export const StoreForm = () => {
     formState: { errors },
   } = useForm<IAddStore>({ resolver: zodResolver(schema) });
 
-  const onSubmit = (data) => {
+  const onSubmit: SubmitHandler<IAddStore> = (data) => {
     // mutation.mutate(data);
   };
 
