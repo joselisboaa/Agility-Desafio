@@ -24,7 +24,7 @@ export const Navbar = () => {
           <Image src={menuRight} className="cursor-pointer" alt="hotdog para abrir o menu" onClick={toggleNavbar} />
         </div>
         <div
-          className="overflow-y-auto scrollbar scrollbar-track-slate-300 scrollbar-thumb-primary
+          className="overflow-y-auto scrollbar-thin scrollbar-track-slate-300 scrollbar-thumb-primary
         scrollbar-thumb-rounded"
         >
           <div className="flex min-h-[3.75rem] cursor-pointer items-center gap-4 pl-4 hover:bg-gray-color-40">
