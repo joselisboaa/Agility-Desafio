@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Logo } from "../Logo";
-import { arrowDown, menuRight, notification } from "@/assets";
+import { arrowDown, notification } from "@/assets";
 import { Button } from "../Button";
 
 interface IHeaderProps {
@@ -14,17 +14,14 @@ export const Header: React.FC<IHeaderProps> = ({ username, children }) => {
       <div className="px-8 py-6">
         <Logo />
       </div>
-      <div className="flex w-full flex-row justify-between pr-10">
-        <div className="flex items-center">
-          <Image src={menuRight} className="cursor-pointer" alt="hotdog para abrir o menu" />
-        </div>
+      <div className="flex w-full flex-row justify-end pr-10">
         <div className="flex items-center justify-center gap-4">
           <div className="border-r border-input-border pr-4">
             <Image src={notification} alt="notificações" className="cursor-pointer hover:fill-gray-color-40" />
           </div>
           <div className="flex cursor-pointer items-center gap-4 p-2 hover:bg-gray-color-40">
             {children}
-            <Button id="user-btn" type="button" styles={"lg:h-[50px] lg:w-[50px] rounded-full"}>
+            <Button id="user-btn" type="button" styles={"h-[3.125rem] w-[3.125rem] lg:h-[3.125rem] lg:w-[3.125rem] rounded-full capitalize"}>
               {username.slice(0, 2)}
             </Button>
             <span className="capitalize">{username}</span>
