@@ -3,6 +3,7 @@ import { GoogleMap, Marker, useJsApiLoader, MarkerClusterer } from "@react-googl
 import { useState, useCallback } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useFetch } from "@/hooks/useFetch";
+import { IStoresBody } from "@/provider";
 
 const containerStyle = {
   width: "100%",
@@ -17,20 +18,14 @@ const center = {
 const GOOGLE_API_KEY = process.env.NEXT_PUBLIC_ACL_GOOGLE_API_KEY as string;
 
 export default function Map() {
-  const sendHttpRequest = useFetch({ method: "GET", endpoint: "stores" });
+  const sendHttpRequest = useFetch<IStoresBody[]>({ method: "GET", endpoint: "stores" });
 
   const { data } = useQuery({
     queryKey: ["store"],
     queryFn: async () => await sendHttpRequest(),
-    initialData: [
-      {
-        lat: -3.8016459262844875,
-        lng: -38.564730421914305,
-      },
-    ],
   });
 
-  const coordsData = data.map((city) => {
+  const coordsData = data?.map((city) => {
     const latitude = city.lat;
     const longitude = city.lng;
 
@@ -42,8 +37,6 @@ export default function Map() {
     googleMapsApiKey: GOOGLE_API_KEY,
     language: "pt-BR",
   });
-
-  console.log(coordsData);
 
   const [map, setMap] = useState(null);
 
@@ -244,10 +237,8 @@ export default function Map() {
     <div>
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10} onLoad={onLoad} onUnmount={onUnmount}>
         <MarkerClusterer>
-          {(clusterer) => 
+          {(clusterer) =>
             coordsData.map((coord, index) => {
-              console.log(coord);
-              
               return (
                 <Marker
                   key={index}
@@ -262,7 +253,7 @@ export default function Map() {
                   clusterer={clusterer}
                   position={coord}
                 />
-              )
+              );
             })
           }
         </MarkerClusterer>
