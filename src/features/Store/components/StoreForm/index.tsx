@@ -41,8 +41,8 @@ export const StoreForm = () => {
   const schema = z.object({
     name: z.string().nonempty({ message: messageRequired }),
     city: z.string().nonempty({ message: messageRequired }),
-    latitude: z.string().nonempty({ message: messageRequired }),
-    longitude: z.string().nonempty({ message: messageRequired }),
+    latitude: z.string({ required_error: messageRequired }).transform((value) => Number(value)),
+    longitude: z.string({ required_error: messageRequired }).transform((value) => Number(value)),
   });
 
   const {
