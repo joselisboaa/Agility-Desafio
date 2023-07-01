@@ -10,3 +10,10 @@ export interface ICustomersBody {
   day: number;
   custommer_quantity: number;
 }
+
+export interface IStoresBody {
+  id: number;
+  name: string;
+  lat: number;
+  lng: number;
+}
