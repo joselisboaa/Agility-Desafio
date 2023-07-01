@@ -66,12 +66,12 @@
     {
       "id": 7,
       "name": "Fortaleza",
-      "ammount": 90.76
+      "ammount": 90.761
     },
     {
       "id": 8,
       "name": "Cedro",
-      "ammount": 90.75
+      "ammount": 90.752
     }
   ],
   "signatures": [
@@ -99,31 +99,73 @@
   "stores": [
     {
       "id": 1,
-      "city_id": 1,
-      "latitude": "-3.8016459262844875",
-      "longitude": "-38.564730421914305",
+      "city": "Fortaleza",
+      "lat": -3.8016459262844875,
+      "lng": -38.564730421914305,
       "name": "Loja do Seu Zé"
     },
     {
       "id": 2,
-      "city_id": 7,
-      "latitude": "-4.8016459262844875",
-      "longitude": "-39.564730421914305",
+      "city": "Fortaleza",
+      "lat": -4.801645926284488,
+      "lng": -39.564730421914305,
       "name": "Loja do Seu Carlos"
     },
     {
       "id": 3,
-      "city_id": 7,
-      "latitude": "-5.8016459262844875",
-      "longitude": "-40.564730421914305",
+      "city": "Fortaleza",
+      "lat": -5.801645926284488,
+      "lng": -40.564730421914305,
       "name": "Boteco Maria bonita"
     },
     {
       "name": "teste",
       "city": "teste",
-      "latitude": "-11",
-      "longitude": "-22",
+      "lat": -11,
+      "lng": -22,
       "id": 4
+    },
+    {
+      "name": "Testando o nome",
+      "city": "Cidade teste",
+      "lat": -11.459283485,
+      "lng": -22.352858454,
+      "id": 5
+    },
+    {
+      "name": "teste",
+      "city": "teste",
+      "lat": 22,
+      "lng": 234,
+      "id": 6
+    },
+    {
+      "name": "Teste loja",
+      "city": "Fortaleza",
+      "lat": -11.238428323,
+      "lng": -22.82358235,
+      "id": 7
+    },
+    {
+      "name": "Testando",
+      "city": "Fortaleza",
+      "lat": -11.2313123123,
+      "lng": -22.144356366,
+      "id": 8
+    },
+    {
+      "name": "Testando a loja",
+      "city": "Fortaleza",
+      "lat": -11.3945934593,
+      "lng": -22.3482584835,
+      "id": 9
+    },
+    {
+      "name": "wefwef",
+      "city": "wefwef",
+      "latitude": -11.912391293,
+      "longitude": -22.192391239,
+      "id": 10
     }
   ],
   "customer-entry": [
