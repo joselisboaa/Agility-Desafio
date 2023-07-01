@@ -1,6 +1,8 @@
 "use client";
 import { GoogleMap, Marker, useJsApiLoader, MarkerClusterer } from "@react-google-maps/api";
 import { useState, useCallback } from "react";
+import { useQuery } from "@tanstack/react-query";
+import { useFetch } from "@/hooks/useFetch";
 
 const containerStyle = {
   width: "100%",
@@ -15,11 +17,33 @@ const center = {
 const GOOGLE_API_KEY = process.env.NEXT_PUBLIC_ACL_GOOGLE_API_KEY as string;
 
 export default function Map() {
+  const sendHttpRequest = useFetch({ method: "GET", endpoint: "stores" });
+
+  const { data } = useQuery({
+    queryKey: ["store"],
+    queryFn: async () => await sendHttpRequest(),
+    initialData: [
+      {
+        lat: -3.8016459262844875,
+        lng: -38.564730421914305,
+      },
+    ],
+  });
+
+  const coordsData = data.map((city) => {
+    const latitude = city.lat;
+    const longitude = city.lng;
+
+    return { lat: latitude, lng: longitude };
+  });
+
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
     googleMapsApiKey: GOOGLE_API_KEY,
     language: "pt-BR",
   });
+
+  console.log(coordsData);
 
   const [map, setMap] = useState(null);
 
@@ -216,21 +240,32 @@ export default function Map() {
     setMap(null);
   }, []);
 
-  return isLoaded ? (
+  return isLoaded && data ? (
     <div>
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10} onLoad={onLoad} onUnmount={onUnmount}>
-        <Marker
-          icon={{
-            path: google.maps.SymbolPath.CIRCLE,
-            fillColor: "#2382A0",
-            fillOpacity: 1,
-            strokeColor: "#ffffff",
-            strokeWeight: 1,
-            scale: 6,
-          }}
-          onClick={() => console.log("tste")}
-          position={center}
-        />
+        <MarkerClusterer>
+          {(clusterer) => 
+            coordsData.map((coord, index) => {
+              console.log(coord);
+              
+              return (
+                <Marker
+                  key={index}
+                  icon={{
+                    path: google.maps.SymbolPath.CIRCLE,
+                    fillColor: "#2382A0",
+                    fillOpacity: 1,
+                    strokeColor: "#ffffff",
+                    strokeWeight: 1,
+                    scale: 6,
+                  }}
+                  clusterer={clusterer}
+                  position={coord}
+                />
+              )
+            })
+          }
+        </MarkerClusterer>
       </GoogleMap>
     </div>
   ) : (
