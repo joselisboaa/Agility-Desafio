@@ -13,6 +13,7 @@ import { twMerge } from "tailwind-merge";
 import { useContext } from "react";
 import { StoreContext } from "../../contexts/Store";
 import { notifyError, notifySucess } from "@/utils";
+import { useRouter } from "next/navigation";
 
 interface IAddStore {
   name: string;
@@ -22,6 +23,7 @@ interface IAddStore {
 }
 
 export const StoreForm = () => {
+  const router = useRouter();
   const sendHttpRequest = useFetch({ method: "POST", endpoint: "stores" });
   const { isActive, setIsActive } = useContext(StoreContext);
 
@@ -29,6 +31,7 @@ export const StoreForm = () => {
     mutationFn: sendHttpRequest<IAddStore>,
     onSuccess: () => {
       notifySucess("Loja criada com sucesso!");
+      router.push("/home");
     },
     onError: () => {
       notifyError("Erro ao criar a loja!");
