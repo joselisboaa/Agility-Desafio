@@ -238,23 +238,25 @@ export default function Map() {
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10} onLoad={onLoad} onUnmount={onUnmount}>
         <MarkerClusterer>
           {(clusterer) =>
-            coordsData.map((coord, index) => {
-              return (
-                <Marker
-                  key={index}
-                  icon={{
-                    path: google.maps.SymbolPath.CIRCLE,
-                    fillColor: "#2382A0",
-                    fillOpacity: 1,
-                    strokeColor: "#ffffff",
-                    strokeWeight: 1,
-                    scale: 6,
-                  }}
-                  clusterer={clusterer}
-                  position={coord}
-                />
-              );
-            })
+            coordsData ?
+              coordsData.map((coord, index) => {
+                return (
+                  <Marker
+                    key={index}
+                    icon={{
+                      path: google.maps.SymbolPath.CIRCLE,
+                      fillColor: "#2382A0",
+                      fillOpacity: 1,
+                      strokeColor: "#ffffff",
+                      strokeWeight: 1,
+                      scale: 6,
+                    }}
+                    clusterer={clusterer}
+                    position={coord}
+                  />
+                );
+              })
+            : null
           }
         </MarkerClusterer>
       </GoogleMap>
