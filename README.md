@@ -56,13 +56,6 @@ Url para acessar o servidor:
 http://localhost:3000/
 ```
 
-## Configuração do Google API
-Nesse projeto é necessário a utilização de uma key do google para a utilização da API de mapa,
-crie um arquivo .env ou .env.local e seguindo o arquivo env-example.txt você verá como irá declarar a sua
-API KEY.
-
-**OBS: CASO NÃO TENHA A API KEY USE: AIzaSyBV7UtHiaqt0-1rYCn09o5BY5BhGiyztRA**
-
 ## Configuração do Json-Server
 
 Após a instalação de todos os pacotes, execute o comando:
