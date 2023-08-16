@@ -70,11 +70,6 @@ Login: admin
 Senha: admin
 ```
 
-## Demo da aplicação
-https://github.com/joselisboaa/agility-desafio/assets/67613937/e8f4a009-7f96-4ff7-83b6-1fceee768359
-
-
-
 ## Padrões 
 
 ### Padrão de id
