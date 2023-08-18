@@ -1,5 +1,5 @@
-# Agility Desafio
-Repositorio para o Desafio de front end da Agility
+# Store Mapping
+Repositorio do Projeto de Mapeamento de Lojas
 
 ## Principais Bibliotecas/Ferramentas
 | Environment | Info |
@@ -37,11 +37,7 @@ Repositorio para o Desafio de front end da Agility
 Com todos os pré-requisitos instalados. Após clonar o projeto execute o comando:
 
 > npm install
-
-ou
-
-> npm install --legacy-peer-deps
-
+> 
 Depois de iniciar a pasta node_modules, execute o comando:
 
 > npm run dev
@@ -74,7 +70,7 @@ Senha: admin
 
 ### Padrão de id
 
-O id deve ser _AG_ junto com a id da issue com 3 casas de unidades, exemplo: AF001
+O id deve ser _AG_ junto com a id da issue com 3 casas de unidades, exemplo: SM001
 
 ### Padrão de issue
 * feature/{id} - {Titulo}
