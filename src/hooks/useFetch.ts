@@ -10,7 +10,7 @@ export function useFetch<T>({
   errorMessage = "Algo está errado",
 }: IBaseProps): <U>(body?: U | undefined) => Promise<T extends undefined ? undefined : T> {
   const sendHttpRequest = async <U>(body?: U) => {
-    const response = await fetch(`http://127.0.0.1:8000/${endpoint}`, {
+    const response = await fetch(`http://127.0.0.1:8080/${endpoint}/`, {
       headers: { "Content-Type": "application/json" },
       body: body ? JSON.stringify(body) : null,
       method: method,
