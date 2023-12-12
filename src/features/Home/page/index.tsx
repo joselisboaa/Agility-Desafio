@@ -11,14 +11,14 @@ export const HomeComponent = async () => {
   const sendCityHttpRequest = useFetch<[]>({ method: "GET", endpoint: "cities" });
   const sendClientHttpRequest = useFetch<[]>({ method: "GET", endpoint: "clients" });
   const sendSignatureHttpRequest = useFetch<[]>({ method: "GET", endpoint: "signatures" });
-  const sendStoreHttpRequest = useFetch<[]>({ method: "GET", endpoint: "stores" });
   const sendCustomersStatus = useFetch<ICustomersBody[]>({ method: "GET", endpoint: "customer-entry" });
+  const sendStoreHttpRequest = useFetch<[]>({ method: "GET", endpoint: "stores" });
 
   const clientResponse = await sendClientHttpRequest();
   const cityResponse = await sendCityHttpRequest();
   const signatureResponse = await sendSignatureHttpRequest();
-  const storeResponse = await sendStoreHttpRequest();
   const customerResponse = await sendCustomersStatus();
+  const storeResponse = await sendStoreHttpRequest();
 
   const clientStatuses = clientResponse.length.toString();
   const cityStatuses = cityResponse.length.toString();

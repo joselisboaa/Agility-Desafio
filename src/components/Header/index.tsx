@@ -22,7 +22,7 @@ export const Header: React.FC<IHeaderProps> = ({ username, children }) => {
           <div className="flex cursor-pointer items-center gap-4 p-2 hover:bg-gray-color-40">
             {children}
             <Button id="user-btn" type="button" styles={"h-[3.125rem] w-[3.125rem] lg:h-[3.125rem] lg:w-[3.125rem] rounded-full capitalize"}>
-              {username.slice(0, 2)}
+              {"AD"}
             </Button>
             <span className="capitalize">{username}</span>
             <Image src={arrowDown} alt="informações do usuário" />

@@ -6,13 +6,13 @@ COPY package.json .
 RUN npm install && npm audit fix
 
 COPY . .
-RUN npm run build && npm run server
-
 
 FROM node:alpine
 
 WORKDIR /home/node/app
 
 COPY --from=builder /home/node/app .
+
+EXPOSE 3000
 
 CMD ["npm", "run", "dev"]

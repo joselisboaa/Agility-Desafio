@@ -31,16 +31,33 @@ export const LoginPage = () => {
       const { login } = data;
       const { password } = data;
 
-      if (login === users[0].login && password === users[0].password) {
-        localStorage.setItem("logged_user_name", users[0].login);
+      if (findUserByName(users, login, password)) {
+        localStorage.setItem("logged_user_name", login);
         router.push("home");
         return notifySucess("Logado com sucesso!");
       }
+
+      console.warn(users, login, password)
+
       notifyError("Suas credenciais estão incorretas");
     } catch (error) {
+      console.warn(error)
       notifyError("Erro de conexão");
     }
   };
+
+  const findUserByName = (users: ILoginProps[], username: string, password: string) => {
+    let user = null;
+    users.forEach((user_data) => {
+
+      if(user_data.login == username && user_data.password == user_data.password) {
+        user = user_data.login;
+      } 
+
+    });
+
+    return user !== null;
+  }
 
   const onSubmit: SubmitHandler<ILoginProps> = (data) => {
     handleLoginAttempt(data);
