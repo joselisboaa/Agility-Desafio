@@ -1,5 +1,15 @@
-# Store Mapping
-Repositorio do Projeto de Mapeamento de Lojas
+# Client System
+Repositório do Projeto do frontend de TJW 
+
+## Sobre
+O sistema proposto a ser desenvolvido se trata de um sistema interno de uma empresa de gerenciamento de lojas, onde seriam registrado as lojas, clientes, entradas, cidades das lojas, tudo isso seria registrado e gerenciado e as lojas poderiam ser vistas em um mapa, facilitando a visualização e gerenciamento das lojas.
+
+## Instalação
+Primeiramente utilize o comando
+```
+git clone https://github.com/joselisboaa/StoreMapping.git
+```
+para poder clonar o projeto localmente
 
 ## Principais Bibliotecas/Ferramentas
 | Environment | Info |
@@ -50,20 +60,6 @@ Url para acessar o servidor:
 
 ```md
 http://localhost:3000/
-```
-
-## Configuração do Json-Server
-
-Após a instalação de todos os pacotes, execute o comando:
-
-> npm run server
-
-desse modo o mock do backend poderá funcionar corretamente.
-
-**OBS: Apenas irá ter 1 usuário cadastrado.**
-```
-Login: admin
-Senha: admin
 ```
 
 ## Padrões 
