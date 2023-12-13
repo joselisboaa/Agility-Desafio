@@ -6,7 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { arrowOut } from "@/assets";
 import { useMutation } from "@tanstack/react-query";
 import { useFetch } from "@/hooks/useFetch";
-import { z } from "zod";
+import { object, z } from "zod";
 import { messageRequired } from "@/provider";
 import classNames from "classnames";
 import { twMerge } from "tailwind-merge";
@@ -40,10 +40,19 @@ export const StoreForm = () => {
 
   const schema = z.object({
     name: z.string().nonempty({ message: messageRequired }),
-    city: z.string().nonempty({ message: messageRequired }),
+    city: z
+      .string()
+      .nonempty({ message: messageRequired })
+      .transform((value) => stringToObject(value)),
     latitude: z.string({ required_error: messageRequired }).transform((value) => Number(value)),
     longitude: z.string({ required_error: messageRequired }).transform((value) => Number(value)),
   });
+
+  const stringToObject = (value: string) => {
+    return {
+      name: value,
+    };
+  };
 
   const {
     register,
