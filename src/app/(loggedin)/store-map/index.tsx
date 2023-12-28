@@ -7,7 +7,7 @@ import { useContext } from "react";
 import { StoreContext } from "@/features/Store/contexts/Store";
 
 export default function StoreComponent() {
-  const { isActive, setIsActive } = useContext(StoreContext);
+  const { setIsActive } = useContext(StoreContext);
 
   return (
     <div className="flex flex-col gap-4 bg-primary-background p-5">

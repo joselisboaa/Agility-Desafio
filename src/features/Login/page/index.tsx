@@ -37,11 +37,11 @@ export const LoginPage = () => {
         return notifySucess("Logado com sucesso!");
       }
 
-      console.warn(users, login, password)
+      console.warn(users, login, password);
 
       notifyError("Suas credenciais estão incorretas");
     } catch (error) {
-      console.warn(error)
+      console.warn(error);
       notifyError("Erro de conexão");
     }
   };
@@ -49,15 +49,13 @@ export const LoginPage = () => {
   const findUserByName = (users: ILoginProps[], username: string, password: string) => {
     let user = null;
     users.forEach((user_data) => {
-
-      if(user_data.login == username && user_data.password == user_data.password) {
+      if (user_data.login == username && user_data.password == password) {
         user = user_data.login;
-      } 
-
+      }
     });
 
     return user !== null;
-  }
+  };
 
   const onSubmit: SubmitHandler<ILoginProps> = (data) => {
     handleLoginAttempt(data);

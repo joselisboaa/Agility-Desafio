@@ -1,6 +1,5 @@
 import { Header, Navbar } from "@/components";
 import { useFetch } from "@/hooks/useFetch";
-import { useReducer } from "react";
 
 interface IHomeLayout {
   children: React.ReactNode;
@@ -17,7 +16,7 @@ export default async function HomeLayout({ children }: IHomeLayout) {
 
   const userData = await sendHttpRequest();
 
-  const user = userData[0]
+  const user = userData[0];
 
   return (
     <div>

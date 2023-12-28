@@ -38,7 +38,7 @@ export default function Map() {
     language: "pt-BR",
   });
 
-  const [map, setMap] = useState(null);
+  const [_map, setMap] = useState(null);
 
   const onLoad = useCallback(function callback(map: any) {
     const options = {

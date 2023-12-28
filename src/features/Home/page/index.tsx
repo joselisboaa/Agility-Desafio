@@ -4,7 +4,6 @@ import { useFetch } from "@/hooks/useFetch";
 import { Ranking } from "../components/Ranking";
 import { Chart } from "@/components/Chart";
 import { ICustomersBody } from "@/provider";
-import classNames from "classnames";
 import Image from "next/image";
 
 export const HomeComponent = async () => {

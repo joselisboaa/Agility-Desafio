@@ -15,7 +15,7 @@ interface IButtonColors {
   primary: string;
 }
 
-export const Button: React.FC<IButtonProps> = ({ textColor, color, children, type = "button", styles, ...props }) => {
+export const Button: React.FC<IButtonProps> = ({ textColor, children, type = "button", styles }) => {
   const colorVariants: IButtonColors = {
     primary: "bg-primary hover:bg-primary-light",
   };

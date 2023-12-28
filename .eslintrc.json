@@ -26,10 +26,7 @@
       "@typescript-eslint"
   ],
   "rules": {
-      "indent": [
-          "error",
-          2
-      ],
+      "indent": "off",
       "linebreak-style": [
           "error",
           "unix"
@@ -42,7 +39,8 @@
           "error",
           "always"
       ],
-      "react/react-in-jsx-scope": "off",
-        "react/prop-types": "off"
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "prettier/prettier": 0
   }
 }
